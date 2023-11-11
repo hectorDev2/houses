@@ -1,0 +1,14 @@
+<section>
+  <swiper-container #swiperRef swiperElement [config]="config" init="true">
+    <swiper-slide *ngFor="let slide of sliderImg" class="slide">
+      <img
+        width="300"
+        class="rounded-t-lg"
+        height="200"
+        [src]="slide.url"
+        alt="randomized image"
+      />
+    </swiper-slide>
+  </swiper-container>
+  <div class="swiper-scrollbar"></div>
+</section>
