@@ -1,0 +1,88 @@
+<section class="flex flex-col w-full h-full">
+  <div
+    class="border-b-[1px] flex items-center justify-center p-6 relative rounded-t"
+  >
+    <div class="font-semibold text-lg">Registrar</div>
+  </div>
+  <!---->
+  <div class="flex flex-col flex-1 overflow-y-auto">
+    <form
+      novalidate=""
+      class="flex flex-col gap-4 p-6 ng-untouched ng-pristine ng-invalid"
+    >
+      <div class="text-start">
+        <div class="font-light mt-2 text-neutral-500">Registrate !</div>
+      </div>
+      <div class="relative w-full">
+        <input
+          placeholder=" "
+          autocomplete=""
+          class="bg-white border-2 disabled:cursor-not-allowed disabled:opacity-70 font-light outline-none p-4 peer pt-6 rounded-md transition w-full border-neutral-300 focus:border-black pl-4 ng-untouched ng-pristine ng-valid"
+          id="name"
+          type="undefined"
+        /><label
+          class="pointer-events-none -translate-y-3 absolute duration-150 origin-[0] peer-focus:-translate-y-4 peer-focus:scale-75 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 text-md top-5 transform z-10 left-4 text-zinc-400"
+        >
+          Nombre </label
+        ><!---->
+      </div>
+      <div class="relative w-full">
+        <input
+          placeholder=" "
+          autocomplete=""
+          class="bg-white border-2 disabled:cursor-not-allowed disabled:opacity-70 font-light outline-none p-4 peer pt-6 rounded-md transition w-full border-neutral-300 focus:border-black pl-4 ng-untouched ng-pristine ng-invalid"
+          id="email"
+          type="undefined"
+          required=""
+        /><label
+          class="pointer-events-none -translate-y-3 absolute duration-150 origin-[0] peer-focus:-translate-y-4 peer-focus:scale-75 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 text-md top-5 transform z-10 left-4 text-zinc-400"
+        >
+          Email </label
+        ><!---->
+      </div>
+      <div class="relative w-full">
+        <input
+          placeholder=" "
+          autocomplete=""
+          class="bg-white border-2 disabled:cursor-not-allowed disabled:opacity-70 font-light outline-none p-4 peer pt-6 rounded-md transition w-full border-neutral-300 focus:border-black pl-4 ng-untouched ng-pristine ng-invalid"
+          id="password"
+          type="password"
+          required=""
+        /><label
+          class="pointer-events-none -translate-y-3 absolute duration-150 origin-[0] peer-focus:-translate-y-4 peer-focus:scale-75 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 text-md top-5 transform z-10 left-4 text-zinc-400"
+        >
+          Password </label
+        ><!---->
+      </div>
+    </form>
+    <!----><!---->
+    <div class="flex flex-col gap-2 p-6">
+      <div class="flex justify-center flex-row gap-4 items-center w-full">
+        <button
+          class="w-[300px] pointer-events-auto justify-center flex items-center gap-2 py-3 px-5 bg-slate-950 text-white transition-all duration-200 hover:scale-105 active:scale-95 rounded-full"
+        >
+          <span class="font-semibold text-sm">Registrar</span>
+        </button>
+      </div>
+      <!---->
+      <div class="flex flex-col gap-4 mt-3">
+        <hr />
+        <div class="text-neutral-500 text-center mt-4 font-light">
+          <p>
+            Ya tienes una cuenta?
+            <b>
+              <span
+                [routerLink]="['/auth/login']"
+                class="text-neutral-800 cursor-pointer hover:underline"
+              >
+                Entrar</span
+              >
+            </b>
+          </p>
+        </div>
+      </div>
+      <!---->
+    </div>
+    <!---->
+  </div>
+</section>

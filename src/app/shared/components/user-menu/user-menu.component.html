@@ -4,7 +4,7 @@
       (click)="onSell()"
       class="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition active:scale-95"
     >
-      Sell property
+      vender propiedad
     </button>
     <div>
       <button
@@ -40,11 +40,6 @@
     <div class="flex flex-col cursor-pointer h-full w-full py-2">
       <ng-container *ngIf="currentUser">
         <app-menu-item
-          label="My favorites"
-          routerLink="/favorites"
-          (click)="toggleOpen()"
-        ></app-menu-item>
-        <app-menu-item
           label="My properties"
           routerLink="/properties"
           (click)="toggleOpen()"
@@ -59,13 +54,13 @@
 
       <ng-container *ngIf="!currentUser">
         <app-menu-item
-          label="Login"
-          (click)="handleloginModal('Login')"
+          label="Entrar"
+          (click)="goToPage('/auth/login')"
           [isBold]="true"
         ></app-menu-item>
         <app-menu-item
-          label="Sign up"
-          (click)="handleloginModal('Register')"
+          label="Registrar"
+          (click)="goToPage('/auth/register')"
         ></app-menu-item>
       </ng-container>
     </div>

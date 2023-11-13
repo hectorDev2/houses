@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
-import { Map } from 'mapbox-gl';
+import { LngLat, Map, Marker } from 'mapbox-gl';
 
 @Component({
   selector: 'app-home-maps',
@@ -10,12 +10,11 @@ import { Map } from 'mapbox-gl';
 export class HomeMapsComponent {
   @ViewChild('map')
   public divMap?: ElementRef;
-
   public map?: Map;
 
   ngAfterViewInit(): void {
     if (!this.divMap) throw 'html dont found';
-    const map = new mapboxgl.Map({
+    const map = new Map({
       container: this.divMap.nativeElement, // container ID
       style: 'mapbox://styles/mapbox/streets-v12', // style URL
       center: [-72.147795, -13.457394], // starting position [lng, lat]
@@ -71,5 +70,9 @@ export class HomeMapsComponent {
         },
       });
     });
+  }
+
+  ngOnDestroy(): void {
+    this.map?.remove();
   }
 }

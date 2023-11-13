@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,7 +12,7 @@ export class UserMenuComponent {
   currentUser?: any | null = null;
   isOpen: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   @HostListener('window:scroll', ['$event'])
   getScrollHeight() {
@@ -76,5 +77,9 @@ export class UserMenuComponent {
     //     this.currentUser = user;
     //   }
     // );
+  }
+
+  goToPage(path: string) {
+    this.router.navigate([path]);
   }
 }

@@ -9,4 +9,5 @@ export class MenuItemComponent {
   @Input() routerLink?: string | null = null;
   @Input() label: string | null = null;
   @Input() isBold: boolean = false;
+  @Input() link!: string;
 }
