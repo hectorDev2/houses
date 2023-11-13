@@ -1,6 +1,7 @@
 export interface Property {
   amenities: string[];
   categories: string[];
+  type: string;
   createdAt: Date;
   description: string;
   id: string;

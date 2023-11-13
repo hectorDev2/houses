@@ -12,15 +12,10 @@ export class NavbarHousesComponent {
       path: '',
       icon: '/assets/navbar/house.png',
     },
-    {
-      name: 'Departamentos',
-      path: '/apartments',
-      icon: '/assets/navbar/apartment.png',
-    },
 
     {
-      name: 'Edificios',
-      path: '/buildings',
+      name: 'departamentos',
+      path: '/departments',
       icon: '/assets/navbar/building.png',
     },
     {

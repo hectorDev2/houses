@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SharedModule } from './shared/shared.module';
 import { ApartmentPageComponent } from './pages/apartment-page/apartment-page.component';
-import { BuildingsPageComponent } from './pages/buildings-page/buildings-page.component';
 import { LandsPageComponent } from './pages/lands-page/lands-page.component';
 import { HomesPagesComponent } from './pages/homes-pages/homes-pages.component';
 import { SliderImgComponent } from './components/slider-img/slider-img.component';
@@ -23,7 +22,6 @@ register();
     AppComponent,
     HomePageComponent,
     ApartmentPageComponent,
-    BuildingsPageComponent,
     LandsPageComponent,
     HomesPagesComponent,
     SliderImgComponent,
