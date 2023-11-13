@@ -1,0 +1,21 @@
+
+
+<div class="d-flex justify-content-center">
+
+  <img
+    [src]="url"
+    [alt]="alt"
+    class="card-img-top animate__animated animate__fadeIn  rounded-t-lg"
+    (load)="onLoad()"
+    [ngStyle]="{ display: hasLoaded ? '' : 'none' }"
+  />
+
+  <img
+    *ngIf="!hasLoaded"
+    src="assets/loading.svg"
+    height="150"
+    width="150"
+    class="m-auto mb-5 text-red-800"
+  />
+
+</div>

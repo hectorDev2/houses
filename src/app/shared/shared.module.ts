@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarHousesComponent } from './components/navbar/navbar-houses/navbar-houses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { LazyImageComponent } from './components/lazy-image/lazy-image.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     UserMenuComponent,
     MenuItemComponent,
     NavbarHousesComponent,
+    LazyImageComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +32,7 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
     NavbarComponent,
     SearchInputComponent,
     UserMenuComponent,
+    LazyImageComponent
   ],
 })
 export class SharedModule {}

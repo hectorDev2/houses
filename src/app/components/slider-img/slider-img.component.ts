@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { Image } from 'src/app/interfaces/properties.interfaces';
 import { Swiper, SwiperOptions } from 'swiper/types';
-import { Mousewheel, Pagination, A11y } from 'swiper/modules';
+import { Mousewheel, A11y } from 'swiper/modules';
 @Component({
   selector: 'app-slider-img',
   templateUrl: './slider-img.component.html',
