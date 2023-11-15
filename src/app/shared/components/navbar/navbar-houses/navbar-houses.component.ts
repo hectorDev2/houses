@@ -23,10 +23,5 @@ export class NavbarHousesComponent {
       path: '/lands',
       icon: '/assets/navbar/land.png',
     },
-    {
-      name: 'residencial',
-      path: '/homes',
-      icon: '/assets/navbar/residencial.png',
-    },
   ];
 }

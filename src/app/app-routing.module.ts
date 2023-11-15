@@ -5,6 +5,7 @@ import { LayoutHouseComponent } from './shared/layout/layout-house/layout-house.
 import { ApartmentPageComponent } from './pages/apartment-page/apartment-page.component';
 import { LandsPageComponent } from './pages/lands-page/lands-page.component';
 import { DetailsPropertyPageComponent } from './pages/details-property-page/details-property-page.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
       { path: '', component: HomePageComponent },
       { path: 'departments', component: ApartmentPageComponent },
       { path: 'lands', component: LandsPageComponent },
-      { path: 'homes', component: HomePageComponent },
+      { path: 'search/:name', component: SearchPageComponent },
       {
         path: 'property/:id',
         component: DetailsPropertyPageComponent,

@@ -10,6 +10,7 @@ import { NavbarHousesComponent } from './components/navbar/navbar-houses/navbar-
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { LazyImageComponent } from './components/lazy-image/lazy-image.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,14 @@ import { LazyImageComponent } from './components/lazy-image/lazy-image.component
     RouterModule,
     HttpClientModule,
     NgxSkeletonLoaderModule,
+    ReactiveFormsModule,
   ],
   exports: [
     LayoutHouseComponent,
     NavbarComponent,
     SearchInputComponent,
     UserMenuComponent,
-    LazyImageComponent
+    LazyImageComponent,
   ],
 })
 export class SharedModule {}

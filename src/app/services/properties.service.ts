@@ -19,4 +19,7 @@ export class PropertiesService {
   fetchTypeProperties(type: string) {
     return this.http.get(`http://localhost:3000/properties?type=${type}`);
   }
+  fetchPropertyByName(name: string) {
+    return this.http.get(`http://localhost:3000/properties?q=${name}`);
+  }
 }

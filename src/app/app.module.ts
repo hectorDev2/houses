@@ -7,13 +7,13 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SharedModule } from './shared/shared.module';
 import { ApartmentPageComponent } from './pages/apartment-page/apartment-page.component';
 import { LandsPageComponent } from './pages/lands-page/lands-page.component';
-import { HomesPagesComponent } from './pages/homes-pages/homes-pages.component';
 import { SliderImgComponent } from './components/slider-img/slider-img.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 import { register } from 'swiper/element/bundle';
 import { SwiperDirective } from './directives/swiper.directive';
 import { DetailsPropertyPageComponent } from './pages/details-property-page/details-property-page.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
 
 register();
 
@@ -23,9 +23,9 @@ register();
     HomePageComponent,
     ApartmentPageComponent,
     LandsPageComponent,
-    HomesPagesComponent,
     SliderImgComponent,
     DetailsPropertyPageComponent,
+    SearchPageComponent,
   ],
   imports: [
     BrowserModule,
