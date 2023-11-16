@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PropertyRenderPageComponent } from './pages/property-render-page/property-render-page.component';
 import { SliderImgComponent } from './components/slider-img/slider-img.component';
 import { SwiperDirective } from '../directives/swiper.directive';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SwiperDirective } from '../directives/swiper.directive';
     LazyImageComponent,
     PropertyRenderPageComponent,
     SliderImgComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
