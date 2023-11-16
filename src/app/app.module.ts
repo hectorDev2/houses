@@ -7,7 +7,6 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SharedModule } from './shared/shared.module';
 import { ApartmentPageComponent } from './pages/apartment-page/apartment-page.component';
 import { LandsPageComponent } from './pages/lands-page/lands-page.component';
-import { SliderImgComponent } from './components/slider-img/slider-img.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 import { register } from 'swiper/element/bundle';
@@ -23,7 +22,6 @@ register();
     HomePageComponent,
     ApartmentPageComponent,
     LandsPageComponent,
-    SliderImgComponent,
     DetailsPropertyPageComponent,
     SearchPageComponent,
   ],

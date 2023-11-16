@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutHouseComponent } from './layout/layout-house/layout-house.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { LazyImageComponent } from './components/lazy-image/lazy-image.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PropertyRenderPageComponent } from './pages/property-render-page/property-render-page.component';
+import { SliderImgComponent } from './components/slider-img/slider-img.component';
+import { SwiperDirective } from '../directives/swiper.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuItemComponent,
     NavbarHousesComponent,
     LazyImageComponent,
+    PropertyRenderPageComponent,
+    SliderImgComponent,
   ],
   imports: [
     CommonModule,
@@ -28,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     NgxSkeletonLoaderModule,
     ReactiveFormsModule,
+    SwiperDirective,
   ],
   exports: [
     LayoutHouseComponent,
@@ -35,6 +41,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearchInputComponent,
     UserMenuComponent,
     LazyImageComponent,
+    SliderImgComponent,
+    PropertyRenderPageComponent,
   ],
+
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SharedModule {}
